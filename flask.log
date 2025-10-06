@@ -1,0 +1,25 @@
+nohup: ignoring input
+ * Serving Flask app 'main'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://169.254.0.21:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 184-522-448
+127.0.0.1 - - [05/Oct/2025 20:23:02] "GET /api/health HTTP/1.1" 200 -
+10.75.76.1 - - [05/Oct/2025 20:23:18] "HEAD / HTTP/1.1" 200 -
+10.75.76.1 - - [05/Oct/2025 20:23:18] "GET / HTTP/1.1" 200 -
+10.75.76.1 - - [05/Oct/2025 20:23:18] "GET / HTTP/1.1" 200 -
+10.75.76.1 - - [05/Oct/2025 20:23:18] "GET /assets/index-ODQHlWXV.js HTTP/1.1" 200 -
+10.75.76.1 - - [05/Oct/2025 20:23:18] "GET /assets/index-DHM4jFlw.css HTTP/1.1" 200 -
+10.75.76.1 - - [05/Oct/2025 20:23:18] "GET /api/products HTTP/1.1" 200 -
+10.75.76.1 - - [05/Oct/2025 20:23:25] "GET / HTTP/1.1" 200 -
+10.75.76.1 - - [05/Oct/2025 20:23:26] "GET /assets/index-DHM4jFlw.css HTTP/1.1" 200 -
+10.75.76.1 - - [05/Oct/2025 20:23:26] "GET /assets/index-ODQHlWXV.js HTTP/1.1" 200 -
+10.75.76.1 - - [05/Oct/2025 20:23:28] "GET /api/products HTTP/1.1" 200 -
+10.75.76.1 - - [05/Oct/2025 20:23:28] "GET /favicon.ico HTTP/1.1" 200 -
+10.75.76.1 - - [05/Oct/2025 20:23:39] "GET /api/categories HTTP/1.1" 200 -
+10.75.76.1 - - [05/Oct/2025 20:23:39] "[36mGET /api/products HTTP/1.1[0m" 304 -
