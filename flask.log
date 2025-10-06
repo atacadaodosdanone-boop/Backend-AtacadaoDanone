@@ -23,3 +23,14 @@ nohup: ignoring input
 10.75.76.1 - - [05/Oct/2025 20:23:28] "GET /favicon.ico HTTP/1.1" 200 -
 10.75.76.1 - - [05/Oct/2025 20:23:39] "GET /api/categories HTTP/1.1" 200 -
 10.75.76.1 - - [05/Oct/2025 20:23:39] "[36mGET /api/products HTTP/1.1[0m" 304 -
+ * Detected change in '/home/ubuntu/ecommerce-project/backend/ecommerce-backend/src/config.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ubuntu/ecommerce-project/backend/ecommerce-backend/src/main.py", line 9, in <module>
+    from src.config import Config
+  File "/home/ubuntu/ecommerce-project/backend/ecommerce-backend/src/config.py", line 10
+    MONGO_URI = os.environ.get(\'MONGO_URI\') or \'mongodb+srv://atacadaodosdanone_db_user:PFZdVRSnsBm1Q5ZY@cluster0.lplaiox.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0\' 
+                                ^
+SyntaxError: unexpected character after line continuation character
