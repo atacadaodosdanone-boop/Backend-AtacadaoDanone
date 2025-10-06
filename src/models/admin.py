@@ -1,6 +1,6 @@
 from bson import ObjectId
 from datetime import datetime
-import bcrypt
+import hashlib
 from src.database import Database
 
 class Admin:
@@ -12,10 +12,10 @@ class Admin:
         self.updated_at = datetime.utcnow()
     
     def _hash_password(self, password):
-        return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
+        return hashlib.sha256(password.encode('utf-8')).hexdigest()
     
     def check_password(self, password):
-        return bcrypt.checkpw(password.encode('utf-8'), self.password_hash)
+        return hashlib.sha256(password.encode('utf-8')).hexdigest() == self.password_hash
     
     def to_dict(self):
         return {
@@ -57,7 +57,7 @@ class Admin:
     
     @staticmethod
     def verify_password(stored_password_hash, provided_password):
-        return bcrypt.checkpw(provided_password.encode('utf-8'), stored_password_hash)
+        return hashlib.sha256(provided_password.encode('utf-8')).hexdigest() == stored_password_hash
     
     @staticmethod
     def create_default_admin():
