@@ -8,7 +8,7 @@ class Database:
     @staticmethod
     def initialize():
         Database.client = MongoClient(Config.MONGO_URI)
-        Database.db = Database.client.get_database()
+        Database.db = Database.client.get_database("ecommerce")
     
     @staticmethod
     def get_db():
